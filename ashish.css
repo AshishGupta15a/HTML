@@ -1,0 +1,23 @@
+p{
+    color:green;
+}
+a{
+    color: blue;
+}
+li{
+    list-style-type: square;
+}
+.special {
+    color:yellowgreen;
+    font-weight: bolder;
+}
+li em{
+    color: orange;
+}
+h1+p{
+    font-size: 120%;
+}
+a:hover{
+    color:blueviolet;
+    text-decoration: none; 
+}

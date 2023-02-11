@@ -1,0 +1,131 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java_Script</title>
+</head>
+<body>
+    <h1>Using Dataypes</h1>
+    <script>
+        //var bool = true;
+        //var num = 5;
+        //var num = "ashish";
+        //var num = null;
+        //var num;
+        //var num = 298392839238n;
+        
+        console.log(typeof num);
+    </script>
+
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    Building a payment form
+</body>
+<script>
+    //Naming Conventions
+
+    //CamelCase
+    let firstName="ashish";
+    //PascalCase
+    let LastNanme="gupta";
+    //SnakeCase
+    let middle_name="Kumar";
+    //Using Contant (const keyword)
+    const price=99;
+    //course name (string)
+    var courseName="Java DS/Algo";
+    //Card Number (Number)
+    var cardNumber="1234567";
+    //Payment STatus (Boolean)
+    var isPaid=true;
+    //Declaring a Variable 
+    var modeofPayment=prompt("Mode of payment");
+    //Output to user
+    alert(firstName + " sucessfully bought " + courseName + "using" + modeofPayment);
+    </script>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional STatements and Loops</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <script>
+        /*var time=prompt("hey what is the time");
+        if(time>5 && time<12){
+            alert("good morning");
+        }
+        else if(time>12 && time<17){
+            alert("bye");
+        }
+        else{
+            alert("good night");
+        }
+        var fruittype = prompt("which fruit");
+        switch(fruittype){
+            case 'Orange':
+                console.log('Orange is 30rs kilo');
+                break;
+            case 'Apple':
+                console.log('Apple is 100rs kilo');
+                break;
+            case 'Guava':
+                console.log('Guava is 50rs kilo');
+                break;
+            default:
+                console.log(`${fruittype} aaj khatam ho gaya hai kal aana.`); 
+        }
+        console.log("do you want anything else");
+        for(let i=5;i<50;i+5){
+            console.log(i)
+        }
+        let i=10;
+        while(i>0){
+            console.log("namaste world")
+            i--
+        }
+        let j=0;
+        do{
+            console.log("namaste world");
+            j++
+        }
+        while(j<10)*/
+        //for..in loop
+        let animal={
+            name:"zebra",
+            leg:4
+        };
+        for(let key in animal){
+            console.log(key,animal[key]);
+        }
+        //Arrays
+        let names=["rahul","neha","aman","ashish"];
+        for(let index in names){
+            console.log(index,names[index])
+        }
+        //for..of loop
+        for(let name in names)
+        {
+            console.log(name)
+        }
+
+
+
+    </script>
+</body>
+</html>

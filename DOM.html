@@ -1,0 +1,98 @@
+<!-- <html>  //root node
+    <head>
+        <title>DOM Manipulation</title>
+    </head>
+    <body>
+        <ul>
+            <li>First element</li>
+            <li>Second element</li>
+            <li>Third element</li>
+        </ul>
+        <script></script>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul id="element">
+        <li class="list-item">First element</li>
+        <li class="list-item">Second element</li>
+        <li class="list-item">Third element</li>
+    </ul>
+    <div class="allDivs">First Div</div>
+    <script>
+        const allDivs=document.getElementByClassName("allDivs")
+        console.log(allDivs)
+    </script>
+    <div class="allDivs">Second Div</div>
+        <table>
+            <tr>
+                <td>One</td>
+                <td>two</td>
+            </tr>
+            <tr>
+                <td>Three</td>
+                <td>Four</td>
+            </tr>
+        </table>
+    <script>
+        // Root Node
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.head)
+
+        // Childrens
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children)
+        // console.log(document.body.firstChild)
+        // console.log(document.body.lastChild)
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+        // const childrensOfBody=Array.from(document.body.children)
+        // console.log(childrensOfBody)
+
+        //Siblings
+        //console.log(document.body.children[0])
+        // const ulTag=document.body.children[0]
+        // //console.log(ulTag.nextElementSibling)
+        // firstLi=ulTag.children[0]
+        // secondLi=ulTag.children[1]
+        // console.log(secondLi.previousElementSibling.textContext)
+
+        //Table DOM Manipulation
+        //const tableTag=document.body.children[1]
+        //console.log(tableTag.tBodies[0].rows[0].cells[0].textContent)
+        //console.log(tableTag.tBodies[0].rows[0].cells[0].style="background-color:blue;")
+        
+        //ID search
+        //console.log(element.stylr.background="red")
+        // const ulTag=document.getElementById("element")
+        // ulTag.style.backgroundColor= "red"
+        // console.log()
+
+        //Class search
+        //listItem=document.getElementsByClassName("list-item")
+        //console.log(listItem)
+
+        function callMe(){
+            console.log(this)
+            alert("thanks for watching")
+            //clickBtn.oneclick=callMe
+            clickBtn.addEventListner('click',callMe)
+            clickBtn.addEventListner('click',function){
+                alert("thanks")
+            })
+            clickBtn.removeEventListner('click',callMe)
+            clickBtn.removeEventListner('click',function){
+                alert("thanks")
+            })
+        }
+    </script>
+</body>
+</html>
